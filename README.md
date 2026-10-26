@@ -28,28 +28,30 @@
 | [`kite-bench`](https://github.com/Kite-Robotics-Special-Interest-Group/kite-bench) | 仿真、数据、训练、鲁棒性评测 |
 | [`kite-showcase`](https://github.com/Kite-Robotics-Special-Interest-Group/kite-showcase) | Unity 场景、视频渲染、对外素材规范 |
 
-## 本地工作目录（点击直达）
+## 本地工作目录
 
-> 这些是 `file://` 链接，在 VS Code / Typora 的本地预览里可点开；在 GitHub 网页上无效。
+> 仓库里的内容都能在 GitHub 上点开（见上表）；下面这些是**只存在于本机**的目录，用等宽文本列出，避免 `file://` 链接在网页上失效。
 
 | 目录 | 路径 |
 | --- | --- |
-| 主仓 Kite | [`D:\JLU_tools\Kite`](file:///D:/JLU_tools/Kite) |
-| 评测台 | [`D:\JLU_tools\kite-bench`](file:///D:/JLU_tools/kite-bench) |
-| 展示仓库 | [`D:\JLU_tools\kite-showcase`](file:///D:/JLU_tools/kite-showcase) |
-| 周报仓库 | [`D:\JLU_tools\kite-weekly`](file:///D:/JLU_tools/kite-weekly) |
-| 旧原型（可删） | [`D:\JLU_tools\kite-sim`](file:///D:/JLU_tools/kite-sim) |
-| Unity 工程 | [`E:\GameStudio\My project`](file:///E:/GameStudio/My%20project) |
-| 模型权重 | [`D:\JLU_tools\Kite\weights`](file:///D:/JLU_tools/Kite/weights) |
-| 官方 SimplerEnv | [`D:\JLU_tools\official\SimplerEnv`](file:///D:/JLU_tools/official/SimplerEnv) |
-| 板端工作区（ssh） | `ssh -p 2222 user@xh2` → `~/kite-work` |
+| 主仓 Kite | `D:\JLU_tools\Kite` |
+| 评测台 | `D:\JLU_tools\kite-bench` |
+| 展示仓库 | `D:\JLU_tools\kite-showcase` |
+| 周报仓库 | `D:\JLU_tools\kite-weekly` |
+| 旧原型（可删） | `D:\JLU_tools\kite-sim` |
+| Unity 工程 | `E:\GameStudio\My project` |
+| 模型权重（不进 Git） | `D:\JLU_tools\Kite\weights` |
+| 官方 SimplerEnv | `D:\JLU_tools\official\SimplerEnv` |
+| 板端工作区 | `ssh -p 2222 user@xh2` → `~/kite-work` |
 
-常用产物：
+## 常用产物
 
-| 产物 | 路径 |
-| --- | --- |
-| 模型抓取视频 | [`model_pick_demo.mp4`](file:///D:/JLU_tools/kite-bench/out/mujoco/model_pick_demo.mp4) |
-| 抓取分阶段拼图 | [`pick_demo_cam.png`](file:///D:/JLU_tools/kite-bench/out/mujoco/pick_demo_cam.png) |
-| 扰动基线表 | [`perturb-baseline.md`](file:///D:/JLU_tools/kite-bench/docs/perturb-baseline.md) |
-| 微调权重 | [`head_v7.pt`](file:///D:/JLU_tools/kite-bench/out/head_v7.pt) |
-| 示教数据（300 条） | [`out/episodes_v4`](file:///D:/JLU_tools/kite-bench/out/episodes_v4) |
+| 产物 | 位置 | 是否入库 |
+| --- | --- | --- |
+| 扰动基线表 | [`docs/perturb-baseline.md`](https://github.com/Kite-Robotics-Special-Interest-Group/kite-bench/blob/main/docs/perturb-baseline.md) | ✅ 在 kite-bench |
+| Unity 教程 | [`docs/unity-setup.md`](https://github.com/Kite-Robotics-Special-Interest-Group/kite-showcase/blob/main/docs/unity-setup.md) | ✅ 在 kite-showcase |
+| 视频录制规范 | [`docs/video.md`](https://github.com/Kite-Robotics-Special-Interest-Group/kite-showcase/blob/main/docs/video.md) | ✅ 在 kite-showcase |
+| 模型抓取视频 | `kite-bench/out/mujoco/model_pick_demo.mp4` | ❌ 本地生成 |
+| 抓取分阶段拼图 | `kite-bench/out/mujoco/pick_demo_cam.png` | ❌ 本地生成 |
+| 微调权重 | `kite-bench/out/head_v7.pt` | ❌ 本地（网盘分发） |
+| 示教数据（300 条） | `kite-bench/out/episodes_v4/` | ❌ 本地 |
